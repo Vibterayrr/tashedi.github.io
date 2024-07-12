@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TASHEDI WRLD</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      scroll-behavior: smooth;
+      color: #333;
+    }
+
+    .section {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+      padding: 20px;
+      background-size: cover;
+      background-position: center;
+      color: #fff;
+    }
+
+    #about {
+      background-image: url('https://wallpapercave.com/wp/wp5204099.jpg');
+    }
+
+    #team {
+      background-image: url('https://wallpapers.com/images/hd/minimalist-nature-r17v20du803pf0x1.jpg');
+      background-size: cover;
+      background-position: center;
+      color: #fff;
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #team .team-members {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      max-width: 1000px;
+      margin-top: 20px;
+    }
+
+    .team-member {
+      margin: 20px 10px;
+      padding: 20px;
+      background: rgba(255, 255, 255, 0.8);
+      background-size: contain;
+      border-radius: 10px;
+      text-align: center;
+      color: #333;
+    }
+
+    .team-member h2 {
+      font-size: 1.8em;
+      margin: 10px 0;
+    }
+
+    .team-member p {
+      font-size: 1em;
+      color: #666;
+    }
+
+    .team-member img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 10px;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      transition: background-color 0.3s, transform 0.3s;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+      transform: scale(1.05);
+    }
+
+    .overlay {
+      background: rgba(0, 0, 0, 0.5);
+      padding: 40px;
+      border-radius: 10px;
+      max-width: 80%;
+    }
+
+    #moto {
+      background-image: url('https://wallpaperaccess.com/full/1129092.jpg');
+    }
+
+    #thankyou {
+      background-image: url('https://c4.wallpaperflare.com/wallpaper/296/598/406/nature-photography-simple-background-wallpaper-preview.jpg');
+    }
+  </style>
+</head>
+<body>
+  <div class="section" id="about">
+    <div class="overlay">
+      <h1>Welcome to TASHEDI WRLD</h1>
+      <p># Break out that bubble ... # Be that change ... # Avg banke nhi rehena</p>
+      <button onclick="scrollToSection('team')">Meet the Team</button>
+    </div>
+  </div>
+
+  <div class="section" id="team">
+    <h1>Our Team</h1>
+    <div class="team-members">
+      <div class="team-member">
+        <h2>Vibhor</h2>
+        <img src="https://static.statusqueen.com/dpimages/thumbnail/anime_boy_dp-2310.jpg" alt="Vibhor">
+        <p>Currently in 2nd year</p>
+      </div>
+      <div class="team-member">
+        <h2>Happy</h2>
+        <img src="https://cdn.openart.ai/published/qOPmZ0wGYqMIkU1HCohx/xdGrv_2S_i0mk_1024.webp" alt="Happy">
+        <p>Currently in 1st year</p>
+      </div>
+      <div class="team-member">
+        <h2>Mayank</h2>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1lD3uDUAASnwiVdo8c9ftdzKJqmn4XSthzg&s" alt="Mayank">
+        <p>Currently in 11th</p>
+      </div>
+    </div>
+    <button onclick="scrollToSection('moto')">Our Moto</button>
+  </div>
+
+  <div class="section" id="moto">
+    <div class="overlay">
+      <h1>Our Moto</h1>
+      <p>We are here to help people start their first startup of any kind.<br><br> We aim to provide productive advice, challenge skills, and emphasize the importance of startups to ease the process for aspiring entrepreneurs.</p>
+      <button onclick="scrollToSection('thankyou')">Thank You</button>
+    </div>
+  </div>
+
+  <div class="section" id="thankyou">
+    <div class="overlay">
+      <h1>Thank You</h1>
+      <p>We hope to inspire and assist you in your first startup.</p>
+    </div>
+  </div>
+
+  <script>
+    function scrollToSection(sectionId) {
+      document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+    }
+  </script>
+</body>
+</html>
